@@ -1,58 +1,94 @@
 <template>
-    <header class="flex justify-between items-center p-6 bg-opacity-50 relative z-20 ">
-        <div class="text-white text-3xl font-bold">PORTFOLIO</div>
-        <!-- Mobile Toggle Button -->
-         <div class="md:hidden z-30">
-         <button type="button" 
-         class="block focus:outline-none"
-         @click="isMenuOpen = !isMenuOpen"
-         >
-            <span v-if="isMenuOpen" class="text-5xl">
-                <img src="https://img.icons8.com/ios-filled/100/ffffff/delete-sign.png" alt="close" width="50" height="50">
-            </span>
-            <span v-else class="text-5xl">
-                <img src="https://img.icons8.com/ios-filled/100/ffffff/menu--v6.png" alt="menu" width="50" height="50">
-            </span>
-         </button>
-        </div>
-         <!-- Navbar Link -->
-          <nav
-          :class="['fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#111827] md:relative md:bg-transparent md:flex md:justify-between md:flex-row',
-            isMenuOpen ? 'block':'hidden'
-          ]"
+  <header class="flex justify-between items-center p-4 md:p-6 bg-opacity-50 relative z-20">
+    <!-- Logo -->
+    <div class="text-white text-2xl md:text-3xl font-bold flex items-center space-x-2">
+      <img src="/src/assets/headericon.png" alt="Code Icon" width="50" height="50" />
+      <span>SUDHAN</span>
+    </div>
+
+    <!-- Center: Navbar Links (Desktop Only) -->
+    <nav class="hidden md:flex space-x-10">
+      <ul class="flex space-x-6">
+        <li v-for="item in Menu" :key="item.name" class="flex items-center space-x-2">
+          <img v-if="item.icon" :src="item.icon" alt="Icon" width="20" height="20" />
+          <a :href="item.href" 
+            class="block text-white transition hover:text-primary ease-linear text-lg"
+            @click="scrollToSection(item.href)"
           >
-            <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0">
-                <li v-for="item in Menu" :key="item.name">
-                    <a :href="item.href" 
-                    class="block text-white transition hover:text-primary ease-linear text-2xl md:text-lg"
-                    @click="scrollToSection(item.href)"
-                    >
-                        {{ item.name }}
-                    </a>
-                </li>
-            </ul>
-          </nav>
-    </header>
+            {{ item.name }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Right: Social Links & Mobile Toggle Button -->
+    <div class="flex items-center space-x-3 md:space-x-10">
+      <!-- Social Links -->
+      <div class="flex items-center space-x-4 md:space-x-6">
+        <a href="#" target="_blank" class="text-white transition hover:text-primary">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/twitter.png" alt="Twitter" width="20" height="20" />
+        </a>
+        <a href="#" target="_blank" class="text-white transition hover:text-primary">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/facebook-new.png" alt="Facebook" width="20" height="20" />
+        </a>
+        <a href="#" target="_blank" class="text-white transition hover:text-primary">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram" width="20" height="20" />
+        </a>
+        <a href="#" target="_blank" class="text-white transition hover:text-primary">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/github.png" alt="GitHub" width="20" height="20" />
+        </a>
+      </div>
+
+      <!-- Mobile Toggle Button -->
+      <div class="md:hidden z-30">
+        <button type="button" class="block focus:outline-none" @click="isMenuOpen = !isMenuOpen">
+          <span v-if="isMenuOpen">
+            <img src="https://img.icons8.com/ios-filled/100/ffffff/delete-sign.png" alt="Close" width="30" height="30" />
+          </span>
+          <span v-else>
+            <img src="https://img.icons8.com/ios-filled/100/ffffff/menu--v6.png" alt="Menu" width="30" height="30" />
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navbar Links -->
+    <nav
+      :class="['fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#111827] md:hidden',
+      isMenuOpen ? 'block' : 'hidden']"
+    >
+      <ul class="flex flex-col items-center space-y-4">
+        <li v-for="item in Menu" :key="item.name" class="flex items-center space-x-2">
+          <img v-if="item.icon" :src="item.icon" alt="Icon" width="20" height="20" />
+          <a :href="item.href" 
+            class="block text-white transition hover:text-primary ease-linear text-xl"
+            @click="scrollToSection(item.href)"
+          >
+            {{ item.name }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </template>
+
 <script setup>
 import { ref } from 'vue';
-const Menu =ref([
-    {name:'Services',href:'#services'},
-    {name:'About Me',href:'#about'},
-    {name:'Skills',href:'#skills'},
-    {name:'Projects',href:'#projects'},
-    // {name:'Testimonials',href:'#testimonials'},
-    {name:'Contact',href:'#contact'},
+
+const Menu = ref([
+  { name: 'About Me', href: '#about', icon: 'https://img.icons8.com/ios-filled/20/ffffff/user.png' },
+  { name: 'Skills', href: '#skills', icon: 'https://img.icons8.com/ios-filled/20/ffffff/brain.png' },
+  { name: 'Projects', href: '#projects', icon: 'https://img.icons8.com/ios-filled/20/ffffff/project.png' },
+  { name: 'Contact', href: '#contact', icon: 'https://img.icons8.com/ios-filled/20/ffffff/email.png' },
 ]);
 
-const isMenuOpen =ref(false)
-const scrollToSection =(href)=>{
-    isMenuOpen.value=false;
-    const section=document.querySelector(href);
-    if(section){
-        section.scrollIntoView({behavior :'smooth'});
-    }
+const isMenuOpen = ref(false);
 
-}
-
+const scrollToSection = (href) => {
+  isMenuOpen.value = false;
+  const section = document.querySelector(href);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 </script>
