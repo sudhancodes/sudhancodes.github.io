@@ -1,5 +1,5 @@
 <template>
-    <section class="text-white mt-20" id="projects">
+    <section class="text-white mt-8" id="projects">
       <div class="px-4 xl:pl-16">
         <div class="mb-4 md:flex md:justify-between xl:pr-16">
           <h2 class="text-4xl font-bold text-white text-center md:text-left mb-4">My Latest Projects</h2>
@@ -93,7 +93,7 @@
     {
       id: 1,
       category: "web development",
-      image: "https://via.placeholder.com/400x300?text=Capture+N+Call",
+      image: "/src/assets/capturencall.jpg",
       title: "Capture n Call",
       description:
         "A .NET MVC app for managing QR cards used in business and personal interactions, enabling efficient scanning and data management.",
@@ -104,7 +104,7 @@
     {
       id: 2,
       category: "web development",
-      image: "https://via.placeholder.com/400x300?text=Angadi+App",
+      image: "/src/assets/angadi.jpg",
       title: "Angadi App",
       description:
         "Developed Web API endpoints and Vue.js components for managing product catalogs, shop details, and user registrations.",
@@ -115,7 +115,7 @@
     {
       id: 3,
       category: "web development",
-      image: "https://via.placeholder.com/400x300?text=Tinisoft+Apps+Page",
+      image: "/src/assets/tinisoftapps.jpg",
       title: "Tinisoft Apps Page",
       description:
         "Created a responsive, interactive webpage to showcase Tinisoft apps using HTML, CSS, and JavaScript.",
@@ -126,7 +126,7 @@
     {
       id: 4,
       category: "web development",
-      image: "https://via.placeholder.com/400x300?text=Portfolio+Project",
+      image: "/src/assets/portfolio.jpg",
       title: "Portfolio",
       description:
         "Built a responsive portfolio website using Vue.js 3 and Tailwind CSS to showcase my projects and skills.",

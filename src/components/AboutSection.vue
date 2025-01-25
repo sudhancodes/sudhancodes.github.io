@@ -13,37 +13,27 @@
             :key="element.id"
             class="flex flex-col md:w-[80%] w-full rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-6 h-48"
           >
-            <div class="flex items-center gap-4">
-              <!-- Icon with Fixed Size -->
-              <div class="w-12 h-12 flex items-center justify-center bg-[#1f1641] rounded-full">
-                <img
-                  src="https://img.icons8.com/ios-glyphs/60/ffffff/graduation-cap--v1.png"
-                  alt="graduation-icon"
-                  class="w-8 h-8"
-                />
-              </div>
-              <div class="text-center">
-                <h3
-                  class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-center lg:text-xl text-sm sm:text-base"
-                >
-                  {{ element.School }}
-                </h3>
-              </div>
+            <div class="text-center">
+              <h3
+                class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-center lg:text-xl text-sm sm:text-base"
+              >
+                {{ element.School }}
+              </h3>
             </div>
-            <div class="mt-4 text-center sm:text-left">
-              <p class="text-white text-center ">{{ element.program }}</p>
-              <p class="text-white text-center ">{{ element.year }}</p>
-              <p class="text-gray-400 text-center ">{{ element.score }}</p>
+            <div class="mt-4 text-center ">
+              <p class="text-white">{{ element.program }}</p>
+              <p class="text-white">{{ element.year }}</p>
+              <p class="text-gray-400">{{ element.score }}</p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- About Me Section -->
-      <div class="mt-4 md:mt-0 text-left flex flex-col z-10 h-full" data-aos="fade-right">
-        <h2 class="text-4xl font-bold text-white text-center md:text-left mb-8">
+      <div class="mt-8 md:mt-0 text-left flex flex-col z-10 h-full" data-aos="fade-right">
+        <h2 class="text-4xl font-bold text-white text-center md:text-left mb-6">
           More About Me</h2>
-        <p class="text-base lg:text-lg mt-8 py-8">
+        <p class="text-base lg:text-lg py-8">
           I am a passionate and detail-oriented Full-Stack Web Developer with expertise in modern web technologies,
           including C#, Java, ASP.NET, HTML, CSS, JavaScript, and Vue.js. With a proven track record of developing
           impactful projects, I thrive in collaborative environments and bring innovative ideas to life.
@@ -116,13 +106,14 @@ const education = ref([
   },
 ]);
 </script>
+
 <style scoped>
 @media (max-width: 768px) {
   .text-center.md\:text-left {
     text-align: center;
   }
   .text-sm {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 </style>

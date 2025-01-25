@@ -1,6 +1,6 @@
 <template>
     <footer class="mt-8 border-t border-[#33353F] bg-[#111827] text-white">
-      <div class="container mx-auto py-8 px-4">
+      <div class="container mx-auto py-8 px-4 md:px-28">
         <!-- Desktop Layout -->
         <div class="hidden md:flex justify-between items-center">
           <!-- Left: Name -->

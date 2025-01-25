@@ -1,6 +1,6 @@
 <template>
-    <section class="text-white mt-20" id="contact">
-      <h2 class="text-4xl font-bold text-white text-center md:text-left mb-4 px-4 xl:pl-16">Let's Connect</h2>
+    <section class="text-white mt-12" id="contact">
+      <h2 class="text-4xl font-bold text-white text-center md:text-left mb-10 px-4 xl:pl-16">Let's Connect</h2>
       <div class="px-4 xl:px-16">
         <p class="text-[#adb7be]">
           I'm always open to discussing exciting opportunities, collaborating on innovative projects, or just connecting for a conversation about technology. Let's get in touch!
@@ -82,10 +82,10 @@
                 <h4>GitHub</h4>
                 <p>
                   <a
-                    href="https://github.com/sudhan-sasikumar"
+                    href="https://github.com/sudhancodes"
                     target="_blank"
                     class="text-blue-400 hover:underline"
-                    >github.com/sudhan-sasikumar</a
+                    >github.com/sudhancodes</a
                   >
                 </p>
               </div>
