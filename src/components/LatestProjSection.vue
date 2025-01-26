@@ -93,7 +93,7 @@
     {
       id: 1,
       category: "web development",
-      image: "/src/assets/capturencall.jpg",
+      image: "/src/assets/captureandcall.jpg",
       title: "Capture n Call",
       description:
         "A .NET MVC app for managing QR cards used in business and personal interactions, enabling efficient scanning and data management.",
@@ -104,7 +104,7 @@
     {
       id: 2,
       category: "web development",
-      image: "/src/assets/angadi.jpg",
+      image: "/src/assets/angadiapp.jpg",
       title: "Angadi App",
       description:
         "Developed Web API endpoints and Vue.js components for managing product catalogs, shop details, and user registrations.",
@@ -115,7 +115,7 @@
     {
       id: 3,
       category: "web development",
-      image: "/src/assets/tinisoftapps.jpg",
+      image: "/src/assets/tinisoftappspage.jpg",
       title: "Tinisoft Apps Page",
       description:
         "Created a responsive, interactive webpage to showcase Tinisoft apps using HTML, CSS, and JavaScript.",
@@ -126,7 +126,7 @@
     {
       id: 4,
       category: "web development",
-      image: "/src/assets/portfolio.jpg",
+      image: "/src/assets/portfolioo.jpg",
       title: "Portfolio",
       description:
         "Built a responsive portfolio website using Vue.js 3 and Tailwind CSS to showcase my projects and skills.",

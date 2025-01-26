@@ -12,7 +12,7 @@
           <!-- Right: Social Links -->
           <div class="flex items-center space-x-6">
             <a
-              href="https://twitter.com"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               class="transition hover:text-primary"
@@ -20,7 +20,7 @@
               <img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" alt="Twitter" />
             </a>
             <a
-              href="https://facebook.com"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               class="transition hover:text-primary"
@@ -28,7 +28,7 @@
               <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/sudhan.urstruly?utm_source=qr&igsh=MWxrMjVzdGc0YjdnYQ=="
               target="_blank"
               rel="noopener noreferrer"
               class="transition hover:text-primary"
@@ -36,7 +36,7 @@
               <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/sudhancodes"
               target="_blank"
               rel="noopener noreferrer"
               class="transition hover:text-primary"

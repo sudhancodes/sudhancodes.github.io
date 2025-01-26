@@ -30,10 +30,10 @@
         <a href="#" target="_blank" class="text-white transition hover:text-primary">
           <img src="https://img.icons8.com/ios-filled/20/ffffff/facebook-new.png" alt="Facebook" width="20" height="20" />
         </a>
-        <a href="#" target="_blank" class="text-white transition hover:text-primary">
+        <a href="https://www.instagram.com/sudhan.urstruly?utm_source=qr&igsh=MWxrMjVzdGc0YjdnYQ==" target="_blank" class="text-white transition hover:text-primary">
           <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram" width="20" height="20" />
         </a>
-        <a href="#" target="_blank" class="text-white transition hover:text-primary">
+        <a href="https://github.com/sudhancodes" target="_blank" class="text-white transition hover:text-primary">
           <img src="https://img.icons8.com/ios-filled/20/ffffff/github.png" alt="GitHub" width="20" height="20" />
         </a>
       </div>
