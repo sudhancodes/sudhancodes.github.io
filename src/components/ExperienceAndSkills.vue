@@ -55,12 +55,12 @@ import { ref } from 'vue';
 const Skills = ref([
     { id: 1, name: 'C#', icon: 'https://img.icons8.com/ios-filled/50/ffffff/c-sharp-logo.png', level: '90%', proficiency: 'Advanced' },
     { id: 2, name: 'ASP.NET MVC', icon: 'https://img.icons8.com/ios-filled/50/ffffff/microsoft.png', level: '80%', proficiency: 'Intermediate' },
-    { id: 3, name: 'Vue.js', icon: '/src/assets/vuejs3.png', level: '70%', proficiency: 'Intermediate' },
+    { id: 3, name: 'Vue.js', icon: '/assets/vuejs3.png', level: '70%', proficiency: 'Intermediate' },
     { id: 4, name: 'HTML & CSS', icon: 'https://img.icons8.com/ios-filled/50/ffffff/html-5.png', level: '95%', proficiency: 'Expert' },
     { id: 5, name: 'JavaScript', icon: 'https://img.icons8.com/ios-filled/50/ffffff/javascript-logo.png', level: '90%', proficiency: 'Advanced' },
     { id: 6, name: 'PostgreSQL', icon: 'https://img.icons8.com/ios-filled/50/ffffff/database.png', level: '75%', proficiency: 'Intermediate' },
     { id: 7, name: 'Git', icon: 'https://img.icons8.com/ios-filled/50/ffffff/git.png', level: '80%', proficiency: 'Advanced' },
-    { id: 8, name: 'VS Code', icon: '/src/assets/vscode.png', level: '85%', proficiency: 'Advanced' },
+    { id: 8, name: 'VS Code', icon: '/assets/vscode.png', level: '85%', proficiency: 'Advanced' },
 ]);
 
 const Experiences = ref([
