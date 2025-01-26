@@ -2,7 +2,7 @@
   <header class="flex justify-between items-center p-4 md:p-6 bg-opacity-50 relative z-20">
     <!-- Logo -->
     <div class="text-white text-2xl md:text-3xl font-bold flex items-center space-x-2">
-      <img src="/src/assets/favicon.png" alt="Code Icon" width="50" height="50" style="filter: invert(1);"/>
+      <img src="/src/assets/favicon.png" alt="Code Icon" width="35" height="35" style="filter: invert(1);"/>
     </div>
 
     <!-- Center: Navbar Links (Desktop Only) -->
